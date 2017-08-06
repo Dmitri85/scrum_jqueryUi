@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1//js/froala_editor.pkgd.min.js"></script>
+    
+    <title>scrum</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--___________________main dialog_____________________________________-->
+        <div id="dialog-add" title="story">
+
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Story</a></li>
+                    <li><a href="#tabs-2">Comments</a></li>
+                </ul>
+
+                <div id="tabs-1">
+                    <form>
+                        <label for="title">Title</label><br>
+                        <input type="text" name="title" id="title" placeholder="Story title" class="text ui-widget-content ui-corner-all"><br>
+                        <label for="description">Description</label><br>
+                        <textarea rows="4" cols="45" id="description" placeholder="Full Description" name="description"></textarea>
+
+                        <div id="date-priority"> <span id="priority-span">Priority:</span><span id="date-span">Date:</span></div>
+
+                        <div id="slider">
+                            <div id="priority-slider" class="ui-slider-handle"></div>
+                        </div>
+
+                        <p id="date-picker-p"><input type="text" id="datepicker" ></p>
+                    </form>
+
+                </div>
+                <div id="tabs-2">
+                    <ul id="sortable-comments-on-dialog">
+                        <!--<li class="ui-state-default">Item 1<span class="ui-icon ui-icon-trash"></span></li>-->
+                    </ul>
+
+                    <button id="btn-comment">add comment</button>
+                    <textarea rows="4" cols="45" placeholder="new comment" id="commentTextArea" required></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!--______________________________delete dialog____________________________________-->
+        <div id="dialog-confirm">
+            <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+        </div>
+
+        <!--__________________________first column__________________________-->
+        <div class="column col-1" id="to-do-column">
+            <div class="column-header column-header-1">
+                To do
+                <button class="ui-button ui-widget  ui-button-icon-only clumn-button">
+                    <span class="ui-icon ui-icon-plus "></span>
+                </button>
+            </div>
+
+            <!--<div class="portlet">
+                <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+            </div>-->
+
+        </div>
+        <!--__________________________second column__________________________-->
+        <div class="column col-2" id="in-progress-column">
+            <div class="column-header column-header-2">
+                In progress
+                <button class="ui-button ui-widget  ui-button-icon-only clumn-button">
+                    <span class="ui-icon ui-icon-plus "></span>
+                </button>
+            </div>
+        </div>
+        <!--__________________________third column__________________________-->
+        <div class="column col-3" id="done-column">
+            <div class="column-header column-header-3">
+                Done
+                <button class="ui-button ui-widget  ui-button-icon-only clumn-button">
+                    <span class="ui-icon ui-icon-plus "></span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="ui-elements.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

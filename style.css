@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #fffbef;
+}
+
+#dialog-add, #dialog-confirm{
+    display: none;
+}
+
+.wrapper {
+    width: 1080px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 30px 10px 30px 10px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .column {
+    width: 33%;
+    border: 3px solid #DFE8EC;
+    /*border-right: 1px solid #DFE8EC;*/
+    
+
+    /*float: left;*/
+    padding-bottom: 100px;
+  }
+
+.column-header{
+    width: 100%;
+    text-align: center;
+    background-color: #817865;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 2em;
+    padding: 5px 10px;
+}
+
+.column-header-1{
+    background-color: #799688;
+}
+
+.column-header-3{
+    background-color: #966060;
+}
+
+button.ui-button.ui-widget.ui-button-icon-only {
+    /*margin: -5px 0 0 50px;*/
+}
+
+#title{
+    width: 486px;
+}
+
+textarea {
+   resize: none;
+}
+
+#slider{
+    height: 13px;
+    width: 190px;
+    display: inline-block;
+}
+
+#date-picker-p{
+    display: inline-block;
+    margin-left: 21px;
+}
+
+#date-span{
+    margin-left: 160px;
+}
+
+#sortable-comments-on-dialog{
+    border-bottom: 2px solid #817865;
+    padding: 10px 5px;
+}
+
+#sortable-comments-on-dialog li{
+    margin: 7px auto;
+}
+
+#sortable-comments-on-dialog li .ui-icon{
+    margin: 0px 0px 3px 414px;
+}
+
+#btn-comment{
+    margin: 8px 0 5px 0;
+}
+
+
+.portlet {
+margin: 1em 1em 1em 1em;
+padding: 0.3em;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+/*padding: 37px 55px 27px;*/
+background: -webkit-linear-gradient(top, #DFE8EC 5%, #FEEEBD 8%) 0 67px;
+background-size: 100% 30px;
+
+}
+
+.portlet div p{
+    display: inline-block;
+    margin: 5px;
+
+}
+/*.portlet-header {
+padding: 0.2em 0.3em;
+margin-bottom: 0.5em;
+position: relative;
+}*/
+.portlet-toggle {
+position: absolute;
+top: 50%;
+right: 0;
+margin-top: -8px;
+}
+.portlet-content {
+padding: 0.4em;
+}
+.portlet-placeholder {
+border: 1px dotted black;
+margin: 0 1em 1em 0;
+height: 50px;
+}
+
+#priorityValueSpan{
+    font-size: 0.7rem;
+    margin: 0px 0 0px 20px;
+}
+
+#priorityValueSpan::before{
+    content: '(';
+}
+
+#priorityValueSpan::after{
+    content: ')';
+}
+
+.edit-delete-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fr-quick-insert{
+    display: none;
+}
+
+/*.ui-icon-trash , .ui-icon-pencil{
+    display: inline-block;
+}*/
